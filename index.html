@@ -167,6 +167,26 @@
         .mt-4.border-2.border-black.p-2.bg-yellow-50.flex.justify-between.items-center.rounded {
             margin-top: 43px;
         }
+                /* Mobile Fix: Narrower Question Column */
+        @media (max-width: 768px) {
+            .sticky-col {
+                width: 90px !important;       /* Fix the width to 90px */
+                min-width: 90px !important;
+                max-width: 90px !important;
+                white-space: normal !important; /* Force text to wrap to new lines */
+                font-size: 11px !important;    /* Make text slightly smaller */
+                line-height: 1.3 !important;   /* Reduce line height */
+                padding: 4px !important;
+                word-wrap: break-word !important;
+            }
+            
+            /* Optional: Adjust checkbox size on mobile for better fit */
+            .check-cell input {
+                width: 16px;
+                height: 16px;
+            }
+        }
+        
     </style>
 </head>
 
