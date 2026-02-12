@@ -8,6 +8,12 @@
     <meta name="description" content="Complete Ramadan self-assessment course and daily tracker.">
     <meta name="author" content="Yasin Ullah, Pakistan">
 
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#15803d">
+    <link rel="icon" type="image/svg+xml" href="icon.svg">
+    <link rel="apple-touch-icon" href="icon.svg">
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
 
@@ -750,10 +756,23 @@
             }
         };
 
-        // Start App
-        window.addEventListener('DOMContentLoaded', () => {
+        // Initialize App
+        document.addEventListener('DOMContentLoaded', () => {
             app.init();
         });
+
+        // Register Service Worker for PWA
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    })
+                    .catch(err => {
+                        console.log('ServiceWorker registration failed: ', err);
+                    });
+            });
+        }
     </script>
 </body>
 
