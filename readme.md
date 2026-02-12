@@ -4,7 +4,7 @@
 
 **URL Parameter:** `index.html` (Default State)
 **Screenshots:**
-![Main Dashboard](file:///C:/Users/Yasin/.gemini/antigravity/brain/9f2a599a-2543-4d09-83a6-80bf71857183/dashboard_view.png)
+![Main Dashboard](dashboard_view.png)
 
 ### Feature Breakdown (Urdu):
 
@@ -71,7 +71,7 @@
 
 **URL Parameter:** N/A (Triggered via JS Logic: Score >= 428)
 **Screenshots:**
-![Celebration Modal](file:///C:/Users/Yasin/.gemini/antigravity/brain/9f2a599a-2543-4d09-83a6-80bf71857183/modal_view.png)
+![Celebration Modal](modal_view.png)
 
 ### Feature Breakdown (Urdu):
 
