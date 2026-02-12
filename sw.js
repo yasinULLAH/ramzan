@@ -1,14 +1,14 @@
-const CACHE_NAME = "ramadan-tracker-v1";
+const CACHE_NAME = "ramadan-tracker-v2";
 const ASSETS_TO_CACHE = [
   "./",
   "./index.html",
   "./manifest.json",
   "./icon.svg",
+  "./lib/tailwindcss.js",
+  "./lib/html2canvas.js",
+  "./lib/confetti.js",
   "https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap",
-  "https://cdn.tailwindcss.com",
-  "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js",
   "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
-  "https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js",
 ];
 
 // Install Event: Cache all static assets
