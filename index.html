@@ -186,6 +186,20 @@
                 height: 16px;
             }
         }
+                /* Mobile: Bottom Buttons 2x2 Grid */
+        @media (max-width: 768px) {
+            /* Change container to a 2-column grid */
+            div.fixed.bottom-4 {
+                display: grid !important;
+                grid-template-columns: 1fr 1fr; /* 2 equal columns */
+                gap: 8px; /* Gap between buttons */
+            }
+            /* Make buttons fill the width and center text */
+            div.fixed.bottom-4 button {
+                width: 100%;
+                justify-content: center;
+            }
+        }
         
     </style>
 </head>
