@@ -135,12 +135,12 @@ if (workbox) {
 ]);
 
     workbox.routing.registerRoute(
-        ({request}) => request.destination === 'style' || request.destination === 'script',
+        ({request, url}) => (request.destination === 'style' || request.destination === 'script') && url.protocol.startsWith('http'),
         new workbox.strategies.StaleWhileRevalidate({ cacheName: 'asset-cache' })
     );
 
     workbox.routing.registerRoute(
-        ({request}) => request.destination === 'image',
+        ({request, url}) => request.destination === 'image' && url.protocol.startsWith('http'),
         new workbox.strategies.CacheFirst({
             cacheName: 'image-cache',
             plugins: [ new workbox.expiration.ExpirationPlugin({ maxEntries: 60, maxAgeSeconds: 30 * 24 * 60 * 60 }) ],
