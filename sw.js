@@ -110,7 +110,7 @@ if (workbox) {
     },
     {
         "url": "sw.js",
-        "revision": "f6e8c26f6d3476e1b7c820b369dbc9fa"
+        "revision": "c55ba200656571f091e3b128d19ecb8b"
     },
     {
         "url": "lib/confetti.js",
