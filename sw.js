@@ -78,7 +78,7 @@ if (workbox) {
     },
     {
         "url": "index.html",
-        "revision": "0a60140caca4d3b2c199c1a88b1f6b68"
+        "revision": "1b98ef44bba3d5ceca19123a3c067260"
     },
     {
         "url": "logo.png",
@@ -110,7 +110,7 @@ if (workbox) {
     },
     {
         "url": "sw.js",
-        "revision": "c55ba200656571f091e3b128d19ecb8b"
+        "revision": "dfb614d0905495667f23e347c9bbec40"
     },
     {
         "url": "lib/confetti.js",
