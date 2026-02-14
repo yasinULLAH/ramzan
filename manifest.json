@@ -1,25 +1,50 @@
 {
-  "name": "Ramadan Tracker",
-  "short_name": "Muttaqi",
-  "start_url": "./index.html",
+  "name": "\u0645\u062a\u0642\u06cc \u0628\u0646\u0646\u06d2 \u06a9\u0627 \u0631\u0645\u0636\u0627\u0646 \u06a9\u0648\u0631\u0633 | Ramadan Tracker",
+  "short_name": "\u0645\u062a\u0642\u06cc \u0628\u0646\u0646\u06d2 \u06a9\u0627 \u0631\u0645\u0636\u0627\u0646 \u06a9\u0648\u0631\u0633 | Ramadan Tracker",
+  "description": "A description of the web application.",
+  "start_url": "Copy (2) of index.html",
   "display": "standalone",
-  "background_color": "#f3f4f6",
-  "theme_color": "#15803d",
-  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#007bff",
+  "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "icon.svg",
-      "sizes": "192x192 512x512",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "src": "icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png"
     },
     {
-      "src": "ramadan_app_icon_1770923046101.png",
+      "src": "icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "ramadan_tracker_icon_1770922935827.png",
+      "src": "icon-384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
