@@ -78,7 +78,7 @@ if (workbox) {
     },
     {
         "url": "index.html",
-        "revision": "65f6ff6230ba955aee680c4bd24eba82"
+        "revision": "5e1e47f1bbbb3784f28820b38edbf063"
     },
     {
         "url": "logo.png",
@@ -87,6 +87,10 @@ if (workbox) {
     {
         "url": "logo2.png",
         "revision": "c6587801f55c555866166a21a32987c4"
+    },
+    {
+        "url": "manifest.json",
+        "revision": "cb2ffe203d2230b4c91b97f77ad918eb"
     },
     {
         "url": "modal_view.png",
@@ -105,8 +109,8 @@ if (workbox) {
         "revision": "caa229629c49f522702510555baf69c3"
     },
     {
-        "url": "lib/.gitkeep",
-        "revision": "d41d8cd98f00b204e9800998ecf8427e"
+        "url": "sw.js",
+        "revision": "9738e4e15d13f62eab091086446d2bab"
     },
     {
         "url": "lib/confetti.js",
