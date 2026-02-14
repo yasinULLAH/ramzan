@@ -49,10 +49,6 @@ if (workbox) {
         "revision": "13c155d1410bcdd7ec2739a5e115669f"
     },
     {
-        "url": ".gitattributes",
-        "revision": "05bdb783ee6514c8c072e47680af8ff7"
-    },
-    {
         "url": "audit_report_urdu.md",
         "revision": "2e7a98bffc16ac5ee32885f8d991c33e"
     },
@@ -82,7 +78,7 @@ if (workbox) {
     },
     {
         "url": "index.html",
-        "revision": "afd2149356cdb9e400a9b6011cc81aea"
+        "revision": "65f6ff6230ba955aee680c4bd24eba82"
     },
     {
         "url": "logo.png",
@@ -91,10 +87,6 @@ if (workbox) {
     {
         "url": "logo2.png",
         "revision": "c6587801f55c555866166a21a32987c4"
-    },
-    {
-        "url": "manifest.json",
-        "revision": "cb2ffe203d2230b4c91b97f77ad918eb"
     },
     {
         "url": "modal_view.png",
@@ -111,10 +103,6 @@ if (workbox) {
     {
         "url": "readme.md",
         "revision": "caa229629c49f522702510555baf69c3"
-    },
-    {
-        "url": "sw.js",
-        "revision": "20bd8038b5a2af17fd6ab2e3a7a6dc74"
     },
     {
         "url": "lib/.gitkeep",
@@ -135,12 +123,12 @@ if (workbox) {
 ]);
 
     workbox.routing.registerRoute(
-        ({request, url}) => (request.destination === 'style' || request.destination === 'script') && url.protocol.startsWith('http'),
+        ({request}) => request.destination === 'style' || request.destination === 'script',
         new workbox.strategies.StaleWhileRevalidate({ cacheName: 'asset-cache' })
     );
 
     workbox.routing.registerRoute(
-        ({request, url}) => request.destination === 'image' && url.protocol.startsWith('http'),
+        ({request}) => request.destination === 'image',
         new workbox.strategies.CacheFirst({
             cacheName: 'image-cache',
             plugins: [ new workbox.expiration.ExpirationPlugin({ maxEntries: 60, maxAgeSeconds: 30 * 24 * 60 * 60 }) ],
