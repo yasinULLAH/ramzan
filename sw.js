@@ -102,7 +102,7 @@ if (workbox) {
     },
     {
         "url": "offline.html",
-        "revision": "93dd8135f88165fc1bbc0acf525cd1d3"
+        "revision": "8987c4b748db7cbdf5e4c6165507121b"
     },
     {
         "url": "Ramadan_Tracker_2026-02-12 (1).png",
@@ -114,7 +114,7 @@ if (workbox) {
     },
     {
         "url": "sw.js",
-        "revision": "b6af65aa321b4a0154c9774f0b7de7fc"
+        "revision": "20bd8038b5a2af17fd6ab2e3a7a6dc74"
     },
     {
         "url": "lib/.gitkeep",
